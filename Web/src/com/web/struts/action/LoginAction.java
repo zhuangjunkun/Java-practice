@@ -39,7 +39,7 @@ public class LoginAction extends Action {
 			HttpServletRequest request, HttpServletResponse response) {
 	     LoginForm loginForm = (LoginForm) form;
 	      // 获取账号信息
-	     ClassPathXmlApplicationContext beans = new ClassPathXmlApplicationContext("../applicationContext.xml");
+	     ClassPathXmlApplicationContext beans = new ClassPathXmlApplicationContext("applicationContext.xml");
 	        System.out.println(beans);
 	     //获取帐号密码
 	        String username = loginForm.getUsername();
